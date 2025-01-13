@@ -1,0 +1,33 @@
+.navbar {
+   width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 6rem;
+    flex-direction:row-reverse;
+    background-color: rgb(243, 243, 216);
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .nav-links a:hover {
+    color: #ff0400;
+    text-decoration: underline;
+  }
+  
+  .nav-links a.active {
+    color: #ff0400;
+    font-weight: bold;
+  }
+  .connection{
+    background-color: rgb(223, 241, 150);
+    border-radius: 20%;
+  }
+  

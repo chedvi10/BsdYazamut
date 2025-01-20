@@ -1,0 +1,12 @@
+.footer {
+    background-color: #333; /* צבע רקע */
+    color: white; /* צבע טקסט */
+    text-align: center; /* ממרכז את הטקסט */
+    padding: 20px; /* ריפוד פנימי */
+    position: fixed; /* מיקום קבוע */
+    bottom: 0; /* מיקום בתחתית */
+    left: 0; /* מיקום משמאל */
+    width: 100%; /* רוחב מלא */
+    margin: 0;
+}
+

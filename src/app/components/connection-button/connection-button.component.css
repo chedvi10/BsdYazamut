@@ -1,0 +1,19 @@
+.connection-button {
+    position: fixed; /* מיקום קבוע */
+    top: 7%; /* מרחק מהחלק העליון של החלון */
+    left: 20px; /* מרחק מהצד הימני של החלון */
+    background-color: #ef5252; /* צבע הרקע */
+    color: white; /* צבע הטקסט */
+    border: none; /* ללא גבול */
+    padding: 10px 20px; /* ריפוד פנימי */
+    border-radius: 5px; /* פינות מעוגלות */
+    font-size: 16px; /* גודל הפונט */
+    cursor: pointer; /* סמן יד כאשר העכבר מעל */
+    z-index: 1000; 
+}
+.connection-button-container{
+    margin-top: 4%;
+}
+.connection-button:hover {
+    background-color: #f90707; /* צבע הרקע בעת עליה */
+}

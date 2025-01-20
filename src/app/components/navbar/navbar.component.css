@@ -4,7 +4,8 @@
   
   .nav-links {
     display: flex;
-    gap: 6rem;
+    justify-content: flex-start;
+    gap: 8rem;
     flex-direction:row-reverse;
     background-color: rgb(243, 243, 216);
   }
@@ -27,7 +28,8 @@
     font-weight: bold;
   }
   .connection{
-    background-color: rgb(223, 241, 150);
+    background-color: rgb(234, 247, 183);
     border-radius: 20%;
+    
   }
   

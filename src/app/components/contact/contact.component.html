@@ -1,14 +1,21 @@
-<p>השאירו לי פרטים ואני אחזור אליכם בהקדם</p>
-<form>
-    <div>
-        <label for="name">שם מלא:</label>
-        <input type="text" placeholder="שם מלא">
-    </div>
-    <div>
-        <label for="email">אימייל:</label>
-        <input type="email" placeholder="אימייל">
-    </div>
-    <div>
-       
-    </div>
-</form>
+<form [formGroup]="contactForm!" (ngSubmit)="onSubmit()">
+    <label for="firstName">שם פרטי:</label>
+    <input id="firstName" formControlName="firstName" required>
+    <br>
+    <label for="lastName">שם משפחה:</label>
+    <input id="lastName" formControlName="lastName" required>
+    <br>
+    <label for="email">אימייל:</label>
+    <input id="email" formControlName="email" type="email" required>
+    <br>
+    <label for="city">עיר:</label>
+    <input id="city" formControlName="city" required>
+    <br>
+    <label for="address">כתובת:</label>
+    <input id="address" formControlName="address" required>
+    <br>
+    <label for="reason">סיבת הפניה:</label>
+    <textarea id="reason" formControlName="reason" required></textarea>
+    <br>
+    <button type="submit" [disabled]="contactForm?.invalid">שלח</button>
+  </form>

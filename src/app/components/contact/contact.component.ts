@@ -28,7 +28,6 @@ export class ContactComponent{
   onSubmit() {
     if (this.contactForm?.valid) {
       console.log(this.contactForm.value);
-      // כאן תוכל להוסיף לוגיקה לשליחת הנתונים
     }
   }
 

@@ -3,33 +3,36 @@
   }
   
   .nav-links {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: flex-start;
-    gap: 8rem;
+    gap: 4rem;
     flex-direction:row-reverse;
-    background-color: rgb(243, 243, 216);
+    background-color: rgb(41, 47, 70);
   }
   
   .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: 500;
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
   
   .nav-links a:hover {
-    color: #ff0400;
+    color: #b8a423;
     text-decoration: underline;
   }
   
   .nav-links a.active {
-    color: #ff0400;
+    color: #b8a423;
     font-weight: bold;
   }
-  .connection{
-    background-color: rgb(234, 247, 183);
-    border-radius: 20%;
-    
-  }
+.logo{
+  width: 5%;
+  
+}
   

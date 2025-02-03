@@ -1,21 +1,40 @@
-<form [formGroup]="contactForm!" (ngSubmit)="onSubmit()">
-    <label for="firstName">שם פרטי:</label>
-    <input id="firstName" formControlName="firstName" required>
-    <br>
-    <label for="lastName">שם משפחה:</label>
-    <input id="lastName" formControlName="lastName" required>
-    <br>
-    <label for="email">אימייל:</label>
-    <input id="email" formControlName="email" type="email" required>
-    <br>
-    <label for="city">עיר:</label>
-    <input id="city" formControlName="city" required>
-    <br>
-    <label for="address">כתובת:</label>
-    <input id="address" formControlName="address" required>
-    <br>
-    <label for="reason">סיבת הפניה:</label>
-    <textarea id="reason" formControlName="reason" required></textarea>
-    <br>
-    <button type="submit" [disabled]="contactForm?.invalid">שלח</button>
-  </form>
+<form [formGroup]="contactForm!" (ngSubmit)="onSubmit()" class="contact-form">
+  <div class="logo-container">
+    <img src="../../../assets/logo.png" class="logo">
+  </div>
+  <div class="opening">
+    <p>שלום!</p>
+    <p>מלא את פרטיך וניצור איתך קשר בהקדם:)</p>
+  </div>
+  <div class="form-group">
+      <label for="firstName">שם פרטי:</label>
+      <input id="firstName" formControlName="firstName" required>
+  </div>
+  
+  <div class="form-group">
+      <label for="lastName">שם משפחה:</label>
+      <input id="lastName" formControlName="lastName" required>
+  </div>
+  
+  <div class="form-group">
+      <label for="email">אימייל:</label>
+      <input id="email" formControlName="email" type="email" required>
+  </div>
+  
+  <div class="form-group">
+      <label for="city">עיר:</label>
+      <input id="city" formControlName="city" required>
+  </div>
+  
+  <div class="form-group">
+      <label for="address">כתובת:</label>
+      <input id="address" formControlName="address" required>
+  </div>
+  
+  <div class="form-group">
+      <label for="reason">סיבת הפניה:</label>
+      <textarea id="reason" formControlName="reason" required></textarea>
+  </div>
+
+  <button type="submit" [disabled]="contactForm?.invalid">שלח</button>
+</form>

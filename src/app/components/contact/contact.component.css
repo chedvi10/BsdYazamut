@@ -1,0 +1,55 @@
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    direction: rtl; /* יישור לימין */
+    text-align: right;
+    color: rgb(41, 47, 70); /* טקסט מיושר לימין */
+}
+.form-group {
+    margin-bottom: 8px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    width: 97%;
+    
+}
+button {
+    padding: 10px 15px;
+    background-color: rgb(41, 47, 70);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.opening{
+    text-align: center;
+    color:#b8a423 ;
+    font-weight: bold;
+}
+.opening p{
+    margin: 2px;
+}
+
+.logo-container {
+    /* מרכז את התוכן בתוך הקונטיינר */
+    margin-bottom: 5px; 
+    width: 93.5%; /* מבטיח שהקונטיינר תופס את כל הרוחב */
+    display: flex;
+    justify-content: center; 
+}
+
+.logo {
+    max-width: 19%; /* מבטיח שהלוגו לא יחרוג מהקונטיינר */
+    height: auto; /* שומר על הפרופורציות */
+}
